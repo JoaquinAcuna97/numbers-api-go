@@ -27,11 +27,64 @@ other support you consider appropriate.
 + Numbers divisible by both 3 and 5: Categorized as "Type 3"
 + Other numbers: Stored as their original value
 
+
+
 #### Number Addition:
-○ The API shall provide a mechanism to save a number into its collection.
+
+<details>
+ <summary><code>POST</code> <code><b>localhost:8080/numbers/</b></code> <code>The API provides a mechanism to save a number into its collection.</code></summary>
+
+##### Body
+
+> | name      |  type     | data type               | description                                                           |
+> |-----------|-----------|-------------------------|-----------------------------------------------------------------------|
+> | number    |  required | object (JSON)           | `{"number":25}`                                                       |
+
+
+##### Responses
+
+> | http code     | content-type                      | response                                                            |
+> |---------------|-----------------------------------|---------------------------------------------------------------------|
+> | `201`         | `application/json`                | `Created successfully`                                              |
+> | `400`         | `application/json`                | `"message": "There was an error processing the request!"`           |
+</details>
+
 #### Number Retrieval:
-○ The API shall allow the retrieval of a specific number's classification. If
-the number is not found, the API should indicate this.
+<details>
+ <summary><code>GET</code> <code><b>localhost:8080/numbers/{number}</b></code> <code>The API allows the retrieval of a specific number's classification. If
+the number is not found, the API returns 404</code></summary>
+
+##### Parameters
+
+> | name      |  type     | data type               | description                                                           |
+> |-----------|-----------|-------------------------|-----------------------------------------------------------------------|
+> | number    |  required | object (JSON)   | `/25`  |
+
+
+##### Responses
+
+> | http code     | content-type                      | response                                                            |
+> |---------------|-----------------------------------|---------------------------------------------------------------------|
+> | `201`         | `application/json`        | `{"Number": 25,"Category": "Type 2"}`                                       |
+> | `404`         | `application/json`                | `"message": "number not found"`                                     |
+> | `400`         | `application/json`                | `"message": "Can't convert this to an int!"`                        |
+</details>
+
 #### Collection Retrieval:
-○ The API shall enable the retrieval of all stored numbers and their
-classifications.
+<details>
+ <summary><code>GET</code> <code><b>localhost:8080/numbers</b></code> <code>The API enables the retrieval of all stored numbers and their classifications.</code></summary>
+
+##### Parameters
+
+> | name      |  type     | data type               | description                                                           |
+> |-----------|-----------|-------------------------|-----------------------------------------------------------------------|
+
+
+##### Responses
+
+> | http code     | content-type                      | response                                                            |
+> |---------------|-----------------------------------|---------------------------------------------------------------------|
+> | `200`         | `application/json`                | `[{"Number": 25,"Category": "Type 2"}]`                             |
+</details>
+
+go version go1.22.1
