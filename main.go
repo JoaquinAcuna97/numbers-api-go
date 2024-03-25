@@ -37,9 +37,9 @@ func postNumbers(context *gin.Context) {
 func auxCalculateCategory(input int) number {
 	// Core logic: Utilizing only one if statement
 	divisibilityTypes := map[int]string{
-		15: "Type 3",
 		3:  "Type 1",
 		5:  "Type 2",
+		15: "Type 3",
 	}
 
 	var result string

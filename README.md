@@ -3,7 +3,7 @@ API that categorizes and stores numbers based on their divisibility
 
 ### Go website :shipit:
 [![Go Reference](https://pkg.go.dev/badge/golang.org/x/website.svg)](https://pkg.go.dev/golang.org/x/website)
-
+![Tests](https://github.com/JoaquinAcuna97/numbers-api-go/workflows/go.yml/badge.svg)
 Go is an open source programming language that makes it easy to build simple,
 reliable, and efficient software.
 
