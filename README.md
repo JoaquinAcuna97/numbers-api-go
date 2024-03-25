@@ -1,5 +1,13 @@
-# NUMBERS API GO
+# NUMBERS API GO :shipit:
 API that categorizes and stores numbers based on their divisibility
+
+### Go website
+[![Go Reference](https://pkg.go.dev/badge/golang.org/x/website.svg)](https://pkg.go.dev/golang.org/x/website)
+Go is an open source programming language that makes it easy to build simple,
+reliable, and efficient software.
+
+![Gopher image](https://golang.org/doc/gopher/fiveyears.jpg)
+*Gopher image by [Renee French][rf], licensed under [Creative Commons 4.0 Attributions license][cc4-by].*
 
 
 ### Objective
@@ -87,4 +95,20 @@ the number is not found, the API returns 404</code></summary>
 > | `200`         | `application/json`                | `[{"Number": 25,"Category": "Type 2"}]`                             |
 </details>
 
-go version go1.22.1
+
+### For developer Folks:
+
+
+
+
+
+> [!IMPORTANT]
+> Key information Developers need to know to run, mantain and evolve this project.
+>
+> go version go1.22.1
+>
+> How to run the project:
+go mod init
+go mod tidy
+go get numbers
+go run main.go 
