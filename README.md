@@ -3,8 +3,7 @@ API that categorizes and stores numbers based on their divisibility
 
 ### Go website :shipit:
 [![Go Reference](https://pkg.go.dev/badge/golang.org/x/website.svg)](https://pkg.go.dev/golang.org/x/website)
-[![test```cmd
-](https://github.com/JoaquinAcuna97/numbers-api-go/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/JoaquinAcuna97/numbers-api-go/actions/workflows/test.yml)
+[![test](https://github.com/JoaquinAcuna97/numbers-api-go/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/JoaquinAcuna97/numbers-api-go/actions/workflows/test.yml)
 Go is an open source programming language that makes it easy to build simple,
 reliable, and efficient software.
 
@@ -111,15 +110,20 @@ the number is not found, the API returns 404</code></summary>
 >
 ### How to run the project:
 ```cmd
-go mod init ```
+go mod init 
+```
 ```cmd
-go mod tidy ```
+go mod tidy 
+```
 ```cmd
-go get numbers ```
+go get numbers 
+```
 ```cmd
-go run main.go ```
+go run main.go 
+```
 
 ### How to run the project test:
 
 ```cmd
-go run test ```
+go run test 
+```
