@@ -1,8 +1,9 @@
-# NUMBERS API GO :shipit:
+# NUMBERS API GO 
 API that categorizes and stores numbers based on their divisibility
 
-### Go website
+### Go website :shipit:
 [![Go Reference](https://pkg.go.dev/badge/golang.org/x/website.svg)](https://pkg.go.dev/golang.org/x/website)
+
 Go is an open source programming language that makes it easy to build simple,
 reliable, and efficient software.
 
